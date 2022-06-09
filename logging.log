@@ -1,0 +1,2660 @@
+INFO, 2022-06-06 15:03:19,353 Data is retrieved from csv file as dataframe
+INFO, 2022-06-06 15:03:34,445 Data is retrieved from csv file as dataframe
+INFO, 2022-06-06 15:04:58,344 Data is retrieved from csv file as dataframe
+INFO, 2022-06-06 15:26:45,443 Sample data is selected to upload in database
+INFO, 2022-06-06 15:28:50,501 Sample data is selected to upload in database
+INFO, 2022-06-06 15:33:52,270 Successfully connected the database
+INFO, 2022-06-06 15:48:31,285 Successfully connected the database
+INFO, 2022-06-06 15:57:11,963 Successfully connected the database
+ERROR, 2022-06-06 16:01:20,650 1050 (42S01): Table 'class_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'class_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/1393669154.py", line 4, in <module>
+    cursor.execute('create table test5.class_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'class_algeria' already exists
+INFO, 2022-06-06 16:16:18,810 insertion completed successfully
+INFO, 2022-06-07 08:26:39,346 Successfully connected the database
+INFO, 2022-06-07 08:26:56,302 insertion completed successfully
+INFO, 2022-06-07 08:30:42,890 Data is retrieved from csv file as dataframe
+INFO, 2022-06-07 09:34:10,134 Successfully connected the database
+ERROR, 2022-06-07 09:34:10,983 1050 (42S01): Table 'class_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'class_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/1336553560.py", line 4, in <module>
+    cursor.execute('create table test5.class_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'class_algeria' already exists
+INFO, 2022-06-07 09:34:17,821 insertion completed successfully
+INFO, 2022-06-07 10:06:08,009 Successfully connected the database
+ERROR, 2022-06-07 10:06:09,764 1050 (42S01): Table 'class_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'class_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/1336553560.py", line 4, in <module>
+    cursor.execute('create table test5.class_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'class_algeria' already exists
+INFO, 2022-06-07 10:06:15,360 insertion completed successfully
+INFO, 2022-06-07 10:09:17,388 Successfully connected the database
+INFO, 2022-06-07 10:09:20,302 insertion completed successfully
+INFO, 2022-06-07 10:09:53,223  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 10:15:22,505  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 10:15:27,684 'Request' object is not subscriptableerror occured during connection to database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2517457008.py", line 11, in fetching_data
+    database = request['database']
+TypeError: 'Request' object is not subscriptable
+ERROR, 2022-06-07 10:15:27,694 local variable 'mydb' referenced before assignmentsth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2517457008.py", line 19, in fetching_data
+    cursor = mydb.cursor()
+UnboundLocalError: local variable 'mydb' referenced before assignment
+ERROR, 2022-06-07 10:15:27,710 Exception on /mysql_fetchdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2517457008.py", line 28, in fetching_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2517457008.py", line 31, in fetching_data
+    logging.exception(str(e)+ 'sth happened while predicting the data with model')
+UnboundLocalError: local variable 'e' referenced before assignment
+INFO, 2022-06-07 10:15:27,759 127.0.0.1 - - [07/Jun/2022 10:15:27] "[35m[1mPOST /mysql_fetchdata HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 10:16:51,710  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 10:16:55,064 'Request' object is not subscriptableerror occured during connection to database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/761157008.py", line 11, in fetching_data
+    database = request['database']
+TypeError: 'Request' object is not subscriptable
+ERROR, 2022-06-07 10:16:55,064 local variable 'mydb' referenced before assignmentsth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/761157008.py", line 19, in fetching_data
+    cursor = mydb.cursor()
+UnboundLocalError: local variable 'mydb' referenced before assignment
+ERROR, 2022-06-07 10:16:55,065 Exception on /mysql_fetchdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/761157008.py", line 28, in fetching_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/761157008.py", line 31, in fetching_data
+    logging.exception(str(e)+ 'sth happened while predicting the data with model')
+UnboundLocalError: local variable 'e' referenced before assignment
+INFO, 2022-06-07 10:16:55,066 127.0.0.1 - - [07/Jun/2022 10:16:55] "[35m[1mPOST /mysql_fetchdata HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 10:46:42,920  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 10:46:50,104 'Request' object is not subscriptableerror occured during connection to database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 11, in fetching_data
+    database = request['database']
+TypeError: 'Request' object is not subscriptable
+ERROR, 2022-06-07 10:46:50,105 local variable 'mydb' referenced before assignmentsth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 19, in fetching_data
+    cursor = mydb.cursor()
+UnboundLocalError: local variable 'mydb' referenced before assignment
+ERROR, 2022-06-07 10:46:50,120 Exception on /mysql_fetchdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 28, in fetching_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 32, in fetching_data
+    logging.exception(str(e)+ 'sth happened while predicting the data with model')
+UnboundLocalError: local variable 'e' referenced before assignment
+INFO, 2022-06-07 10:46:50,121 127.0.0.1 - - [07/Jun/2022 10:46:50] "[35m[1mPOST /mysql_fetchdata HTTP/1.1[0m" 500 -
+ERROR, 2022-06-07 10:46:51,985 'Request' object is not subscriptableerror occured during connection to database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 11, in fetching_data
+    database = request['database']
+TypeError: 'Request' object is not subscriptable
+ERROR, 2022-06-07 10:46:51,986 local variable 'mydb' referenced before assignmentsth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 19, in fetching_data
+    cursor = mydb.cursor()
+UnboundLocalError: local variable 'mydb' referenced before assignment
+ERROR, 2022-06-07 10:46:51,987 Exception on /mysql_fetchdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 28, in fetching_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 32, in fetching_data
+    logging.exception(str(e)+ 'sth happened while predicting the data with model')
+UnboundLocalError: local variable 'e' referenced before assignment
+INFO, 2022-06-07 10:46:51,988 127.0.0.1 - - [07/Jun/2022 10:46:51] "[35m[1mPOST /mysql_fetchdata HTTP/1.1[0m" 500 -
+ERROR, 2022-06-07 10:46:52,833 'Request' object is not subscriptableerror occured during connection to database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 11, in fetching_data
+    database = request['database']
+TypeError: 'Request' object is not subscriptable
+ERROR, 2022-06-07 10:46:52,833 local variable 'mydb' referenced before assignmentsth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 19, in fetching_data
+    cursor = mydb.cursor()
+UnboundLocalError: local variable 'mydb' referenced before assignment
+ERROR, 2022-06-07 10:46:52,834 Exception on /mysql_fetchdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 28, in fetching_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 32, in fetching_data
+    logging.exception(str(e)+ 'sth happened while predicting the data with model')
+UnboundLocalError: local variable 'e' referenced before assignment
+INFO, 2022-06-07 10:46:52,835 127.0.0.1 - - [07/Jun/2022 10:46:52] "[35m[1mPOST /mysql_fetchdata HTTP/1.1[0m" 500 -
+ERROR, 2022-06-07 10:46:53,757 'Request' object is not subscriptableerror occured during connection to database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 11, in fetching_data
+    database = request['database']
+TypeError: 'Request' object is not subscriptable
+ERROR, 2022-06-07 10:46:53,757 local variable 'mydb' referenced before assignmentsth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 19, in fetching_data
+    cursor = mydb.cursor()
+UnboundLocalError: local variable 'mydb' referenced before assignment
+ERROR, 2022-06-07 10:46:53,758 Exception on /mysql_fetchdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 28, in fetching_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 32, in fetching_data
+    logging.exception(str(e)+ 'sth happened while predicting the data with model')
+UnboundLocalError: local variable 'e' referenced before assignment
+INFO, 2022-06-07 10:46:53,759 127.0.0.1 - - [07/Jun/2022 10:46:53] "[35m[1mPOST /mysql_fetchdata HTTP/1.1[0m" 500 -
+ERROR, 2022-06-07 10:46:54,482 'Request' object is not subscriptableerror occured during connection to database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 11, in fetching_data
+    database = request['database']
+TypeError: 'Request' object is not subscriptable
+ERROR, 2022-06-07 10:46:54,483 local variable 'mydb' referenced before assignmentsth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 19, in fetching_data
+    cursor = mydb.cursor()
+UnboundLocalError: local variable 'mydb' referenced before assignment
+ERROR, 2022-06-07 10:46:54,484 Exception on /mysql_fetchdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 28, in fetching_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 32, in fetching_data
+    logging.exception(str(e)+ 'sth happened while predicting the data with model')
+UnboundLocalError: local variable 'e' referenced before assignment
+INFO, 2022-06-07 10:46:54,485 127.0.0.1 - - [07/Jun/2022 10:46:54] "[35m[1mPOST /mysql_fetchdata HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 10:47:17,653 Successfully connected the database
+ERROR, 2022-06-07 10:47:19,421 1050 (42S01): Table 'class_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'class_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/1336553560.py", line 4, in <module>
+    cursor.execute('create table test5.class_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'class_algeria' already exists
+INFO, 2022-06-07 10:47:21,834 insertion completed successfully
+INFO, 2022-06-07 10:47:24,755  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 10:47:32,789 'Request' object is not subscriptableerror occured during connection to database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 11, in fetching_data
+    database = request['database']
+TypeError: 'Request' object is not subscriptable
+ERROR, 2022-06-07 10:47:32,790 local variable 'mydb' referenced before assignmentsth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 19, in fetching_data
+    cursor = mydb.cursor()
+UnboundLocalError: local variable 'mydb' referenced before assignment
+ERROR, 2022-06-07 10:47:32,792 Exception on /mysql_fetchdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 28, in fetching_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_73068/2391472192.py", line 32, in fetching_data
+    logging.exception(str(e)+ 'sth happened while predicting the data with model')
+UnboundLocalError: local variable 'e' referenced before assignment
+INFO, 2022-06-07 10:47:32,793 127.0.0.1 - - [07/Jun/2022 10:47:32] "[35m[1mPOST /mysql_fetchdata HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 10:48:08,143  * Restarting with watchdog (windowsapi)
+INFO, 2022-06-07 10:53:07,120 Successfully connected the database
+ERROR, 2022-06-07 10:53:12,040 1050 (42S01): Table 'class_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'class_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/1336553560.py", line 4, in <module>
+    cursor.execute('create table test5.class_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'class_algeria' already exists
+INFO, 2022-06-07 10:55:48,546 insertion completed successfully
+INFO, 2022-06-07 10:56:25,598  * Restarting with watchdog (windowsapi)
+INFO, 2022-06-07 11:04:24,816  * Restarting with watchdog (windowsapi)
+INFO, 2022-06-07 11:05:42,415  * Restarting with watchdog (windowsapi)
+INFO, 2022-06-07 11:06:41,709 insertion completed successfully
+INFO, 2022-06-07 11:07:01,367  * Restarting with watchdog (windowsapi)
+INFO, 2022-06-07 11:10:18,583 Successfully connected the database
+ERROR, 2022-06-07 11:10:19,788 1050 (42S01): Table 'class_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'class_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/1336553560.py", line 4, in <module>
+    cursor.execute('create table test5.class_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'class_algeria' already exists
+INFO, 2022-06-07 11:10:20,839 insertion completed successfully
+INFO, 2022-06-07 11:10:29,642  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 11:10:42,697 'Request' object is not subscriptableerror occured during connection to database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/777501684.py", line 6, in fetching_data
+    database = request['database']
+TypeError: 'Request' object is not subscriptable
+ERROR, 2022-06-07 11:10:42,697 local variable 'mydb' referenced before assignmentsth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/777501684.py", line 14, in fetching_data
+    cursor = mydb.cursor()
+UnboundLocalError: local variable 'mydb' referenced before assignment
+ERROR, 2022-06-07 11:10:45,638 Exception on /mysql_fetchdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/777501684.py", line 23, in fetching_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/777501684.py", line 28, in fetching_data
+    logging.exception(str(e)+ 'sth happened while predicting the data with model')
+UnboundLocalError: local variable 'e' referenced before assignment
+INFO, 2022-06-07 11:10:45,651 127.0.0.1 - - [07/Jun/2022 11:10:45] "[35m[1mPOST /mysql_fetchdata HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 11:14:46,639  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 11:15:04,476 'Request' object is not subscriptableerror occured during connection to database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/777501684.py", line 6, in fetching_data
+    database = request['database']
+TypeError: 'Request' object is not subscriptable
+ERROR, 2022-06-07 11:15:04,476 local variable 'mydb' referenced before assignmentsth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/777501684.py", line 14, in fetching_data
+    cursor = mydb.cursor()
+UnboundLocalError: local variable 'mydb' referenced before assignment
+ERROR, 2022-06-07 11:15:04,491 Exception on /mysql_fetchdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/777501684.py", line 23, in fetching_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/777501684.py", line 28, in fetching_data
+    logging.exception(str(e)+ 'sth happened while predicting the data with model')
+UnboundLocalError: local variable 'e' referenced before assignment
+INFO, 2022-06-07 11:15:04,492 127.0.0.1 - - [07/Jun/2022 11:15:04] "[35m[1mPOST /mysql_fetchdata HTTP/1.1[0m" 500 -
+ERROR, 2022-06-07 11:15:15,805 'Request' object is not subscriptableerror occured during connection to database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/777501684.py", line 6, in fetching_data
+    database = request['database']
+TypeError: 'Request' object is not subscriptable
+ERROR, 2022-06-07 11:15:15,805 local variable 'mydb' referenced before assignmentsth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/777501684.py", line 14, in fetching_data
+    cursor = mydb.cursor()
+UnboundLocalError: local variable 'mydb' referenced before assignment
+ERROR, 2022-06-07 11:15:15,806 Exception on /mysql_fetchdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/777501684.py", line 23, in fetching_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/777501684.py", line 28, in fetching_data
+    logging.exception(str(e)+ 'sth happened while predicting the data with model')
+UnboundLocalError: local variable 'e' referenced before assignment
+INFO, 2022-06-07 11:15:15,807 127.0.0.1 - - [07/Jun/2022 11:15:15] "[35m[1mPOST /mysql_fetchdata HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 11:17:35,215  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 11:17:43,923 connection is successfull
+INFO, 2022-06-07 11:17:43,984 127.0.0.1 - - [07/Jun/2022 11:17:43] "POST /mysql_fetchdata HTTP/1.1" 200 -
+INFO, 2022-06-07 11:18:53,398 insertion completed successfully
+INFO, 2022-06-07 11:18:56,704 insertion completed successfully
+INFO, 2022-06-07 11:19:01,993  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 11:19:06,124 connection is successfull
+INFO, 2022-06-07 11:19:06,131 127.0.0.1 - - [07/Jun/2022 11:19:06] "POST /mysql_fetchdata HTTP/1.1" 200 -
+INFO, 2022-06-07 11:22:50,645 Successfully connected the database
+ERROR, 2022-06-07 11:22:53,174 1050 (42S01): Table 'class_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'class_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/1336553560.py", line 4, in <module>
+    cursor.execute('create table test5.class_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'class_algeria' already exists
+INFO, 2022-06-07 11:22:56,452 insertion completed successfully
+INFO, 2022-06-07 11:23:21,919  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 11:23:28,061 connection is successfull
+INFO, 2022-06-07 11:23:28,066 127.0.0.1 - - [07/Jun/2022 11:23:28] "POST /mysql_fetchdata HTTP/1.1" 200 -
+ERROR, 2022-06-07 11:34:42,824 1050 (42S01): Table 'class_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'class_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/1336553560.py", line 4, in <module>
+    cursor.execute('create table test5.class_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'class_algeria' already exists
+INFO, 2022-06-07 11:34:52,201 Successfully connected the database
+ERROR, 2022-06-07 11:34:53,059 1050 (42S01): Table 'class_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'class_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/1336553560.py", line 4, in <module>
+    cursor.execute('create table test5.class_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'class_algeria' already exists
+INFO, 2022-06-07 11:45:58,538 Successfully connected the database
+ERROR, 2022-06-07 11:46:00,536 1050 (42S01): Table 'class_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'class_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/1336553560.py", line 4, in <module>
+    cursor.execute('create table test5.class_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'class_algeria' already exists
+INFO, 2022-06-07 12:05:01,738 insertion completed successfully
+INFO, 2022-06-07 12:09:00,921 Successfully connected the database
+ERROR, 2022-06-07 12:09:01,924 1050 (42S01): Table 'class_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'class_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/1336553560.py", line 4, in <module>
+    cursor.execute('create table test5.class_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'class_algeria' already exists
+INFO, 2022-06-07 12:09:03,228 insertion completed successfully
+INFO, 2022-06-07 12:09:08,957  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 12:09:17,159 connection is successfull
+INFO, 2022-06-07 12:09:17,175 127.0.0.1 - - [07/Jun/2022 12:09:17] "POST /mysql_fetchdata HTTP/1.1" 200 -
+INFO, 2022-06-07 12:21:13,648 Successfully connected the database
+INFO, 2022-06-07 12:21:15,082 table created
+INFO, 2022-06-07 12:21:16,297 insertion completed successfully
+INFO, 2022-06-07 12:24:39,988 Successfully connected the database
+ERROR, 2022-06-07 12:24:39,989 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/345523837.py", line 12, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 12:24:42,646 insertion completed successfully
+INFO, 2022-06-07 12:26:12,144  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 12:26:18,958 connection is successfull
+INFO, 2022-06-07 12:26:19,547 127.0.0.1 - - [07/Jun/2022 12:26:19] "POST /mass_regress HTTP/1.1" 200 -
+INFO, 2022-06-07 13:58:54,831 Successfully connected the database
+ERROR, 2022-06-07 13:58:54,863 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/345523837.py", line 12, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 13:58:58,818 insertion completed successfully
+INFO, 2022-06-07 13:59:44,295 Successfully connected the database
+ERROR, 2022-06-07 13:59:44,296 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/345523837.py", line 12, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 13:59:49,620 insertion completed successfully
+INFO, 2022-06-07 13:59:57,051  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 14:00:08,617 connection is successfull
+INFO, 2022-06-07 14:00:08,649 127.0.0.1 - - [07/Jun/2022 14:00:08] "POST /mass_regress HTTP/1.1" 200 -
+INFO, 2022-06-07 14:01:04,891 Successfully connected the database
+ERROR, 2022-06-07 14:01:04,910 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/345523837.py", line 12, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:01:05,913 insertion completed successfully
+INFO, 2022-06-07 14:01:21,693 Successfully connected the database
+ERROR, 2022-06-07 14:01:21,720 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/345523837.py", line 12, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:01:22,672 insertion completed successfully
+INFO, 2022-06-07 14:01:55,645 Successfully connected the database
+ERROR, 2022-06-07 14:01:55,647 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/345523837.py", line 12, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:01:58,789 insertion completed successfully
+INFO, 2022-06-07 14:03:21,872 Successfully connected the database
+ERROR, 2022-06-07 14:03:21,873 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/345523837.py", line 12, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:03:34,828 insertion completed successfully
+INFO, 2022-06-07 14:21:15,263 Successfully connected the database
+ERROR, 2022-06-07 14:21:15,275 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/345523837.py", line 12, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:21:16,554 insertion completed successfully
+INFO, 2022-06-07 14:21:34,567  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 14:21:44,049 Successfully connected the database
+ERROR, 2022-06-07 14:21:44,050 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_95496/345523837.py", line 12, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:21:45,578 insertion completed successfully
+INFO, 2022-06-07 14:24:47,600 Successfully connected the database
+ERROR, 2022-06-07 14:24:47,611 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_97800/345523837.py", line 12, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:24:51,682 insertion completed successfully
+INFO, 2022-06-07 14:25:33,392 Successfully connected the database
+ERROR, 2022-06-07 14:25:33,393 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_97800/345523837.py", line 12, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:25:34,657 insertion completed successfully
+INFO, 2022-06-07 14:25:56,353 Successfully connected the database
+ERROR, 2022-06-07 14:25:56,395 1050 (42S01): Table 'class_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'class_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_97800/94094934.py", line 12, in <module>
+    cursor.execute('create table test5.class_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'class_algeria' already exists
+INFO, 2022-06-07 14:25:57,642 insertion completed successfully
+INFO, 2022-06-07 14:26:08,133  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 14:26:34,258 connection is successfull
+INFO, 2022-06-07 14:26:37,079 127.0.0.1 - - [07/Jun/2022 14:26:37] "POST /mysql_fetchdata HTTP/1.1" 200 -
+INFO, 2022-06-07 14:27:02,268 Successfully connected the database
+ERROR, 2022-06-07 14:27:02,269 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_97800/345523837.py", line 12, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:27:03,912 insertion completed successfully
+INFO, 2022-06-07 14:27:06,779  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 14:27:14,527 connection is successfull
+ERROR, 2022-06-07 14:27:14,867 Exception on /mass_regress [POST]
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_97800/2846344033.py", line 24, in fetchingreg_data
+    Mim_max_X.inverse_transform(y_pred)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\preprocessing\_data.py", line 458, in inverse_transform
+    X = check_array(X, copy=self.copy, dtype=FLOAT_DTYPES,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\utils\validation.py", line 694, in check_array
+    raise ValueError(
+ValueError: Expected 2D array, got 1D array instead:
+array=[0.0194131  0.65565639 0.17654942 4.78753424 0.         1.9182487
+ 0.01327778 0.00677619 2.35320325 3.5919148  0.04196245 0.20159123
+ 0.05978705 0.84510613 0.1295746  0.01120238 6.4705427  0.00807619
+ 0.17984466 0.06611093].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_97800/2846344033.py", line 28, in fetchingreg_data
+    logging.exception(str(e)+ 'sth happened while predicting the data with model')
+UnboundLocalError: local variable 'e' referenced before assignment
+INFO, 2022-06-07 14:27:14,920 127.0.0.1 - - [07/Jun/2022 14:27:14] "[35m[1mPOST /mass_regress HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 14:27:45,863 Successfully connected the database
+ERROR, 2022-06-07 14:27:45,864 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_97800/345523837.py", line 12, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:27:48,936 insertion completed successfully
+INFO, 2022-06-07 14:28:14,828 Successfully connected the database
+ERROR, 2022-06-07 14:28:14,829 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_97800/345523837.py", line 12, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:28:16,844 insertion completed successfully
+INFO, 2022-06-07 14:28:23,156  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 14:28:34,491 connection is successfull
+ERROR, 2022-06-07 14:28:34,506 Exception on /mass_regress [POST]
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_97800/2846344033.py", line 24, in fetchingreg_data
+    Mim_max_X.inverse_transform(y_pred)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\preprocessing\_data.py", line 458, in inverse_transform
+    X = check_array(X, copy=self.copy, dtype=FLOAT_DTYPES,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\utils\validation.py", line 694, in check_array
+    raise ValueError(
+ValueError: Expected 2D array, got 1D array instead:
+array=[1.69164899e-01 1.99111111e-02 1.00000000e-03 2.71944444e-02
+ 2.70553149e+00 2.43706349e-02 2.44614491e+00 8.07619048e-03
+ 1.71153788e-01 2.17780631e+00 5.09861111e-02 1.77150505e+00
+ 2.15901912e-01 1.72575115e+00 3.91050234e+00 3.39880952e-02
+ 6.32479973e+00 7.97619048e-03 1.49097944e-01 1.41183600e+00].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_97800/2846344033.py", line 28, in fetchingreg_data
+    logging.exception(str(e)+ 'sth happened while predicting the data with model')
+UnboundLocalError: local variable 'e' referenced before assignment
+INFO, 2022-06-07 14:28:34,507 127.0.0.1 - - [07/Jun/2022 14:28:34] "[35m[1mPOST /mass_regress HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 14:29:41,451 Successfully connected the database
+ERROR, 2022-06-07 14:29:41,452 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_97800/3213093536.py", line 13, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:29:43,808 insertion completed successfully
+INFO, 2022-06-07 14:29:49,911  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 14:29:53,556 connection is successfull
+ERROR, 2022-06-07 14:29:53,579 Exception on /mass_regress [POST]
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_97800/2170478188.py", line 24, in fetchingreg_data
+    Mim_max_X.inverse_transform(y_pred)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\preprocessing\_data.py", line 458, in inverse_transform
+    X = check_array(X, copy=self.copy, dtype=FLOAT_DTYPES,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\utils\validation.py", line 694, in check_array
+    raise ValueError(
+ValueError: Expected 2D array, got 1D array instead:
+array=[7.76571429e-02 2.50000000e-04 2.39463312e-01 5.87887484e+00
+ 2.40121205e+00 1.23857143e-02 3.14795996e-01 1.79563102e+00
+ 9.88535714e-02 1.71445455e-01 2.62726190e-02 2.59051587e-02
+ 1.87025736e+00 2.52033550e-01 1.83466883e-01 1.02519621e+00
+ 3.59161389e+00 1.62178571e-02 1.60265306e+00 1.76428788e-01].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_97800/2170478188.py", line 28, in fetchingreg_data
+    logging.exception(str(e)+ 'sth happened while predicting the data with model')
+UnboundLocalError: local variable 'e' referenced before assignment
+INFO, 2022-06-07 14:29:53,580 127.0.0.1 - - [07/Jun/2022 14:29:53] "[35m[1mPOST /mass_regress HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 14:31:39,020 Successfully connected the database
+ERROR, 2022-06-07 14:31:39,021 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3213093536.py", line 13, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:31:40,503 insertion completed successfully
+INFO, 2022-06-07 14:31:43,960  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 14:32:03,289 connection is successfull
+ERROR, 2022-06-07 14:32:03,477 Exception on /mass_regress [POST]
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/2170478188.py", line 24, in fetchingreg_data
+    Mim_max_X.inverse_transform(y_pred)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\preprocessing\_data.py", line 458, in inverse_transform
+    X = check_array(X, copy=self.copy, dtype=FLOAT_DTYPES,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\utils\validation.py", line 694, in check_array
+    raise ValueError(
+ValueError: Expected 2D array, got 1D array instead:
+array=[6.05558238e+00 1.93333333e-03 5.79537157e-02 5.92023810e-02
+ 3.13333333e-03 3.38674203e+00 1.67481735e+00 6.00000000e-04
+ 5.70000000e-03 1.65496645e-01 0.00000000e+00 5.79537157e-02
+ 2.13416234e-01 4.30000000e-03 1.84773810e-02 1.74114502e-01
+ 2.21504134e+00 1.95792172e-01 1.88200794e-01 4.55111056e+00].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/2170478188.py", line 28, in fetchingreg_data
+    logging.exception(str(e)+ 'sth happened while predicting the data with model')
+UnboundLocalError: local variable 'e' referenced before assignment
+INFO, 2022-06-07 14:32:03,482 127.0.0.1 - - [07/Jun/2022 14:32:03] "[35m[1mPOST /mass_regress HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 14:34:19,997 Successfully connected the database
+ERROR, 2022-06-07 14:34:20,034 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3213093536.py", line 13, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:34:24,000 insertion completed successfully
+INFO, 2022-06-07 14:34:26,353  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 14:34:29,240 connection is successfull
+ERROR, 2022-06-07 14:34:29,262 Expected 2D array, got 1D array instead:
+array=[1.64663312e-01 7.63061688e-02 1.64164700e+00 1.71912121e-01
+ 3.29487590e-01 5.00000000e-04 5.19039683e-02 1.63611111e-02
+ 3.23395202e-01 6.94800866e-02 1.71976190e-02 4.06400794e-02
+ 7.11614719e-02 3.70067100e-01 3.64729377e+00 2.05476190e-03
+ 3.86666667e-03 1.03236764e+00 2.05595873e+00 6.77619048e-03].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.sth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/1880281712.py", line 24, in fetchingreg_data
+    Mim_max_X.inverse_transform(y_pred)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\preprocessing\_data.py", line 458, in inverse_transform
+    X = check_array(X, copy=self.copy, dtype=FLOAT_DTYPES,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\utils\validation.py", line 694, in check_array
+    raise ValueError(
+ValueError: Expected 2D array, got 1D array instead:
+array=[1.64663312e-01 7.63061688e-02 1.64164700e+00 1.71912121e-01
+ 3.29487590e-01 5.00000000e-04 5.19039683e-02 1.63611111e-02
+ 3.23395202e-01 6.94800866e-02 1.71976190e-02 4.06400794e-02
+ 7.11614719e-02 3.70067100e-01 3.64729377e+00 2.05476190e-03
+ 3.86666667e-03 1.03236764e+00 2.05595873e+00 6.77619048e-03].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+ERROR, 2022-06-07 14:34:29,263 Exception on /mass_regress [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 14:34:29,263 127.0.0.1 - - [07/Jun/2022 14:34:29] "[35m[1mPOST /mass_regress HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 14:34:50,152 Successfully connected the database
+ERROR, 2022-06-07 14:34:50,153 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3213093536.py", line 13, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:34:51,907 insertion completed successfully
+INFO, 2022-06-07 14:34:53,534  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 14:34:56,387 connection is successfull
+ERROR, 2022-06-07 14:34:56,400 Expected 2D array, got 1D array instead:
+array=[3.06761905e-02 5.36666667e-03 2.03857363e+00 2.34634091e-01
+ 6.42456385e-01 2.14092150e+00 1.49623232e-01 7.15291126e-02
+ 6.23092246e+00 3.79646825e-02 1.28721429e-01 2.75000000e-03
+ 4.66666667e-03 1.36704978e-01 3.39033052e+00 3.55725404e+00
+ 6.91256133e-02 0.00000000e+00 1.82712121e-01 1.65496645e-01].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.sth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/1880281712.py", line 24, in fetchingreg_data
+    Mim_max_X.inverse_transform(y_pred)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\preprocessing\_data.py", line 458, in inverse_transform
+    X = check_array(X, copy=self.copy, dtype=FLOAT_DTYPES,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\utils\validation.py", line 694, in check_array
+    raise ValueError(
+ValueError: Expected 2D array, got 1D array instead:
+array=[3.06761905e-02 5.36666667e-03 2.03857363e+00 2.34634091e-01
+ 6.42456385e-01 2.14092150e+00 1.49623232e-01 7.15291126e-02
+ 6.23092246e+00 3.79646825e-02 1.28721429e-01 2.75000000e-03
+ 4.66666667e-03 1.36704978e-01 3.39033052e+00 3.55725404e+00
+ 6.91256133e-02 0.00000000e+00 1.82712121e-01 1.65496645e-01].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+ERROR, 2022-06-07 14:34:56,401 Exception on /mass_regress [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 14:34:56,401 127.0.0.1 - - [07/Jun/2022 14:34:56] "[35m[1mPOST /mass_regress HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 14:39:41,441 Successfully connected the database
+ERROR, 2022-06-07 14:39:41,442 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3213093536.py", line 13, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:39:42,549 insertion completed successfully
+INFO, 2022-06-07 14:39:44,844  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 14:39:48,263 connection is successfull
+ERROR, 2022-06-07 14:39:48,300 non-broadcastable output operand with shape (20,1) doesn't match the broadcast shape (20,5)sth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/693548322.py", line 24, in fetchingreg_data
+    Mim_max_X.inverse_transform(y_pred.reshape(-1, 1))
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\sklearn\preprocessing\_data.py", line 461, in inverse_transform
+    X -= self.min_
+ValueError: non-broadcastable output operand with shape (20,1) doesn't match the broadcast shape (20,5)
+ERROR, 2022-06-07 14:39:48,300 Exception on /mass_regress [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 14:39:48,301 127.0.0.1 - - [07/Jun/2022 14:39:48] "[35m[1mPOST /mass_regress HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 14:43:11,834 Successfully connected the database
+ERROR, 2022-06-07 14:43:11,835 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3213093536.py", line 13, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:44:12,308 insertion completed successfully
+ERROR, 2022-06-07 14:45:54,305 Working outside of request context.
+
+This typically means that you attempted to use functionality that needed
+an active HTTP request.  Consult the documentation on testing for
+information about how to avoid this problem.error occured during connection to database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/693548322.py", line 4, in fetchingreg_data
+    user = request.json['user']
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\werkzeug\local.py", line 432, in __get__
+    obj = instance._get_current_object()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\werkzeug\local.py", line 554, in _get_current_object
+    return self.__local()  # type: ignore
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\globals.py", line 38, in _lookup_req_object
+    raise RuntimeError(_request_ctx_err_msg)
+RuntimeError: Working outside of request context.
+
+This typically means that you attempted to use functionality that needed
+an active HTTP request.  Consult the documentation on testing for
+information about how to avoid this problem.
+ERROR, 2022-06-07 14:45:54,351 local variable 'mydb' referenced before assignmentsth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/693548322.py", line 14, in fetchingreg_data
+    cursor = mydb.cursor()
+UnboundLocalError: local variable 'mydb' referenced before assignment
+ERROR, 2022-06-07 14:45:54,354 local variable 'X_inserted' referenced before assignmentsth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/693548322.py", line 23, in fetchingreg_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+INFO, 2022-06-07 14:47:45,195 Successfully connected the database
+ERROR, 2022-06-07 14:47:45,196 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3213093536.py", line 13, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:47:46,169 insertion completed successfully
+ERROR, 2022-06-07 14:48:31,168 Working outside of request context.
+
+This typically means that you attempted to use functionality that needed
+an active HTTP request.  Consult the documentation on testing for
+information about how to avoid this problem.error occured during connection to database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3330318767.py", line 4, in fetchingreg_data
+    user = request.json['user']
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\werkzeug\local.py", line 432, in __get__
+    obj = instance._get_current_object()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\werkzeug\local.py", line 554, in _get_current_object
+    return self.__local()  # type: ignore
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\globals.py", line 38, in _lookup_req_object
+    raise RuntimeError(_request_ctx_err_msg)
+RuntimeError: Working outside of request context.
+
+This typically means that you attempted to use functionality that needed
+an active HTTP request.  Consult the documentation on testing for
+information about how to avoid this problem.
+ERROR, 2022-06-07 14:48:31,168 local variable 'mydb' referenced before assignmentsth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3330318767.py", line 14, in fetchingreg_data
+    cursor = mydb.cursor()
+UnboundLocalError: local variable 'mydb' referenced before assignment
+ERROR, 2022-06-07 14:48:31,175 local variable 'X_inserted' referenced before assignmentsth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3330318767.py", line 23, in fetchingreg_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+INFO, 2022-06-07 14:50:31,995 Successfully connected the database
+ERROR, 2022-06-07 14:50:31,996 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3213093536.py", line 13, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:50:33,149 insertion completed successfully
+INFO, 2022-06-07 14:50:35,981  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 14:50:41,814 connection is successfull
+INFO, 2022-06-07 14:50:41,837 127.0.0.1 - - [07/Jun/2022 14:50:41] "POST /mass_regress HTTP/1.1" 200 -
+INFO, 2022-06-07 14:51:28,564 Successfully connected the database
+ERROR, 2022-06-07 14:51:28,565 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3213093536.py", line 13, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:51:29,331 insertion completed successfully
+INFO, 2022-06-07 14:51:30,982  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 14:51:33,928 connection is successfull
+ERROR, 2022-06-07 14:51:33,943 Object of type ndarray is not JSON serializablesth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3908193095.py", line 26, in fetchingreg_data
+    return jsonify(y_pred)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\json\__init__.py", line 370, in jsonify
+    dumps(data, indent=indent, separators=separators) + "\n",
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\json\__init__.py", line 211, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "C:\Users\43117073062\Anaconda3\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\43117073062\Anaconda3\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\43117073062\Anaconda3\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\json\__init__.py", line 100, in default
+    return _json.JSONEncoder.default(self, o)
+  File "C:\Users\43117073062\Anaconda3\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ndarray is not JSON serializable
+ERROR, 2022-06-07 14:51:33,989 Exception on /mass_regress [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 14:51:33,990 127.0.0.1 - - [07/Jun/2022 14:51:33] "[35m[1mPOST /mass_regress HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 14:51:51,225 Successfully connected the database
+ERROR, 2022-06-07 14:51:51,226 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3213093536.py", line 13, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 14:51:52,188 insertion completed successfully
+INFO, 2022-06-07 14:51:54,380  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 14:51:56,678 connection is successfull
+INFO, 2022-06-07 14:51:56,691 127.0.0.1 - - [07/Jun/2022 14:51:56] "POST /mass_regress HTTP/1.1" 200 -
+INFO, 2022-06-07 15:05:05,022 Successfully connected the database
+ERROR, 2022-06-07 15:05:05,023 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3213093536.py", line 13, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 15:05:05,964 insertion completed successfully
+INFO, 2022-06-07 15:05:07,995  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 15:05:12,994 connection is successfull
+INFO, 2022-06-07 15:05:13,009 127.0.0.1 - - [07/Jun/2022 15:05:13] "POST /mass_regress HTTP/1.1" 200 -
+INFO, 2022-06-07 15:13:23,611 Successfully connected the database
+ERROR, 2022-06-07 15:13:23,612 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3213093536.py", line 13, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 15:13:24,433 insertion completed successfully
+INFO, 2022-06-07 15:13:27,188  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 15:14:02,807 'NoneType' object is not subscriptableerror occured during connection to database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/76135225.py", line 9, in fetchingreg_data
+    user = request.json['user']
+TypeError: 'NoneType' object is not subscriptable
+ERROR, 2022-06-07 15:14:02,808 local variable 'mydb' referenced before assignmentsth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/76135225.py", line 19, in fetchingreg_data
+    cursor = mydb.cursor()
+UnboundLocalError: local variable 'mydb' referenced before assignment
+ERROR, 2022-06-07 15:14:02,812 local variable 'X_inserted' referenced before assignmentsth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/76135225.py", line 28, in fetchingreg_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+ERROR, 2022-06-07 15:14:02,812 Exception on /mass_regress [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 15:14:02,813 127.0.0.1 - - [07/Jun/2022 15:14:02] "[35m[1mPOST /mass_regress HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 15:14:41,120 Successfully connected the database
+ERROR, 2022-06-07 15:14:41,121 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3213093536.py", line 13, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 15:14:42,293 insertion completed successfully
+INFO, 2022-06-07 15:14:45,128  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 15:14:49,619 'NoneType' object is not subscriptableerror occured during connection to database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/76135225.py", line 9, in fetchingreg_data
+    user = request.json['user']
+TypeError: 'NoneType' object is not subscriptable
+ERROR, 2022-06-07 15:14:49,619 local variable 'mydb' referenced before assignmentsth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/76135225.py", line 19, in fetchingreg_data
+    cursor = mydb.cursor()
+UnboundLocalError: local variable 'mydb' referenced before assignment
+ERROR, 2022-06-07 15:14:49,622 local variable 'X_inserted' referenced before assignmentsth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/76135225.py", line 28, in fetchingreg_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+ERROR, 2022-06-07 15:14:49,623 Exception on /mass_regress [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 15:14:49,623 127.0.0.1 - - [07/Jun/2022 15:14:49] "[35m[1mPOST /mass_regress HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 15:15:12,529 Successfully connected the database
+ERROR, 2022-06-07 15:15:12,530 1050 (42S01): Table 'regression_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'regression_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3213093536.py", line 13, in <module>
+    cursor.execute('create table test5.regression_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'regression_algeria' already exists
+INFO, 2022-06-07 15:15:13,754 insertion completed successfully
+INFO, 2022-06-07 15:15:15,587  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 15:15:19,200 'NoneType' object is not subscriptableerror occured during connection to database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/1804026167.py", line 5, in fetchingreg_data
+    user = request.json['user']
+TypeError: 'NoneType' object is not subscriptable
+ERROR, 2022-06-07 15:15:19,201 local variable 'mydb' referenced before assignmentsth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/1804026167.py", line 15, in fetchingreg_data
+    cursor = mydb.cursor()
+UnboundLocalError: local variable 'mydb' referenced before assignment
+ERROR, 2022-06-07 15:15:19,204 local variable 'X_inserted' referenced before assignmentsth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/1804026167.py", line 24, in fetchingreg_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+ERROR, 2022-06-07 15:15:19,205 Exception on /mass_regress [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 15:15:19,205 127.0.0.1 - - [07/Jun/2022 15:15:19] "[35m[1mPOST /mass_regress HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 15:15:56,052  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 15:16:10,670 'NoneType' object is not subscriptableerror occured during connection to database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/2652195762.py", line 5, in fetching_data
+    user = request.json['user']
+TypeError: 'NoneType' object is not subscriptable
+ERROR, 2022-06-07 15:16:10,670 local variable 'mydb' referenced before assignmentsth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/2652195762.py", line 15, in fetching_data
+    cursor = mydb.cursor()
+UnboundLocalError: local variable 'mydb' referenced before assignment
+ERROR, 2022-06-07 15:16:10,671 Exception on /mysql_fetchdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/2652195762.py", line 24, in fetching_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/2652195762.py", line 29, in fetching_data
+    logging.exception(str(e)+ 'sth happened while predicting the data with model')
+UnboundLocalError: local variable 'e' referenced before assignment
+INFO, 2022-06-07 15:16:10,672 127.0.0.1 - - [07/Jun/2022 15:16:10] "[35m[1mPOST /mysql_fetchdata HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 15:17:19,953 Successfully connected the database
+ERROR, 2022-06-07 15:17:19,954 1050 (42S01): Table 'class_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'class_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/94094934.py", line 12, in <module>
+    cursor.execute('create table test5.class_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'class_algeria' already exists
+INFO, 2022-06-07 15:17:20,749 insertion completed successfully
+INFO, 2022-06-07 15:17:28,912 Successfully connected the database
+ERROR, 2022-06-07 15:17:28,914 1050 (42S01): Table 'class_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'class_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/94094934.py", line 12, in <module>
+    cursor.execute('create table test5.class_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'class_algeria' already exists
+INFO, 2022-06-07 15:17:29,726 insertion completed successfully
+INFO, 2022-06-07 15:17:31,592  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 15:17:36,790 'NoneType' object is not subscriptableerror occured during connection to database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3087903958.py", line 5, in fetching_data
+    user = request.json['user']
+TypeError: 'NoneType' object is not subscriptable
+ERROR, 2022-06-07 15:17:36,790 local variable 'mydb' referenced before assignmentsth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3087903958.py", line 15, in fetching_data
+    cursor = mydb.cursor()
+UnboundLocalError: local variable 'mydb' referenced before assignment
+ERROR, 2022-06-07 15:17:36,791 local variable 'X_inserted' referenced before assignmentsth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3087903958.py", line 24, in fetching_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+ERROR, 2022-06-07 15:17:36,792 Exception on /mysql_fetchdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 15:17:36,792 127.0.0.1 - - [07/Jun/2022 15:17:36] "[35m[1mPOST /mysql_fetchdata HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 15:21:29,310 127.0.0.1 - - [07/Jun/2022 15:21:29] "[33mPOST /mass_regress HTTP/1.1[0m" 404 -
+INFO, 2022-06-07 15:21:48,148 Successfully connected the database
+ERROR, 2022-06-07 15:21:48,149 1050 (42S01): Table 'class_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'class_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/94094934.py", line 12, in <module>
+    cursor.execute('create table test5.class_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'class_algeria' already exists
+INFO, 2022-06-07 15:21:49,609 insertion completed successfully
+INFO, 2022-06-07 15:22:00,053  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 15:22:34,953 127.0.0.1 - - [07/Jun/2022 15:22:34] "[33mPOST /mass_regress HTTP/1.1[0m" 404 -
+INFO, 2022-06-07 15:23:21,069 127.0.0.1 - - [07/Jun/2022 15:23:21] "[33mPOST /mass_regress HTTP/1.1[0m" 404 -
+INFO, 2022-06-07 15:23:41,921 Successfully connected the database
+ERROR, 2022-06-07 15:23:41,922 1050 (42S01): Table 'class_algeria' already existserror occured while new table form
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'class_algeria' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/94094934.py", line 12, in <module>
+    cursor.execute('create table test5.class_algeria(day float, month float, humidity float , wind float, rain float, dmc float, dc float, spread float, region float, classes float)')
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'class_algeria' already exists
+INFO, 2022-06-07 15:23:42,934 insertion completed successfully
+INFO, 2022-06-07 15:23:46,714  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 15:23:56,857 connection is successfull
+INFO, 2022-06-07 15:23:56,864 127.0.0.1 - - [07/Jun/2022 15:23:56] "POST /mysql_fetchdata HTTP/1.1" 200 -
+INFO, 2022-06-07 15:55:53,860  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 16:00:18,990 connection is successfull
+ERROR, 2022-06-07 16:00:18,991 Shape of passed values is (10, 1), indices imply (10, 10)sth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/1622947586.py", line 23, in single_data
+    down_data = pd.DataFrame(fetch_data, columns=col)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\frame.py", line 711, in __init__
+    mgr = ndarray_to_mgr(
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 324, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 393, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (10, 1), indices imply (10, 10)
+ERROR, 2022-06-07 16:00:19,047 local variable 'X_inserted' referenced before assignmentsth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/1622947586.py", line 29, in single_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+ERROR, 2022-06-07 16:00:19,047 Exception on /single_class [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 16:00:19,048 127.0.0.1 - - [07/Jun/2022 16:00:19] "[35m[1mPOST /single_class HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 16:04:38,056  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 16:04:44,226 connection is successfull
+ERROR, 2022-06-07 16:04:44,226 Shape of passed values is (10, 1), indices imply (10, 10)sth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/156710595.py", line 23, in single_data
+    X_inserted = pd.DataFrame(fetch_data, columns=col)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\frame.py", line 711, in __init__
+    mgr = ndarray_to_mgr(
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 324, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 393, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (10, 1), indices imply (10, 10)
+ERROR, 2022-06-07 16:04:44,227 local variable 'X_inserted' referenced before assignmentsth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/156710595.py", line 28, in single_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+ERROR, 2022-06-07 16:04:44,228 Exception on /single_class [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 16:04:44,228 127.0.0.1 - - [07/Jun/2022 16:04:44] "[35m[1mPOST /single_class HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 16:06:41,224 connection is successfull
+ERROR, 2022-06-07 16:06:41,225 Shape of passed values is (10, 1), indices imply (10, 10)sth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/156710595.py", line 23, in single_data
+    X_inserted = pd.DataFrame(fetch_data, columns=col)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\frame.py", line 711, in __init__
+    mgr = ndarray_to_mgr(
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 324, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 393, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (10, 1), indices imply (10, 10)
+ERROR, 2022-06-07 16:06:41,226 local variable 'X_inserted' referenced before assignmentsth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/156710595.py", line 28, in single_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+ERROR, 2022-06-07 16:06:41,226 Exception on /single_class [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 16:06:41,227 127.0.0.1 - - [07/Jun/2022 16:06:41] "[35m[1mPOST /single_class HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 16:06:59,707  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 16:07:03,578 connection is successfull
+ERROR, 2022-06-07 16:07:03,578 Shape of passed values is (10, 1), indices imply (10, 10)sth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/156710595.py", line 23, in single_data
+    X_inserted = pd.DataFrame(fetch_data, columns=col)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\frame.py", line 711, in __init__
+    mgr = ndarray_to_mgr(
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 324, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 393, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (10, 1), indices imply (10, 10)
+ERROR, 2022-06-07 16:07:03,580 local variable 'X_inserted' referenced before assignmentsth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/156710595.py", line 28, in single_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+ERROR, 2022-06-07 16:07:03,580 Exception on /single_class [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 16:07:03,581 127.0.0.1 - - [07/Jun/2022 16:07:03] "[35m[1mPOST /single_class HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 16:24:49,724  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 16:25:27,000  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 16:25:31,654 connection is successfull
+ERROR, 2022-06-07 16:25:31,655 Shape of passed values is (9, 1), indices imply (9, 9)sth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/577712029.py", line 22, in single_data
+    X_inserted = pd.DataFrame(fetch_data, columns=col)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\frame.py", line 711, in __init__
+    mgr = ndarray_to_mgr(
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 324, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 393, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (9, 1), indices imply (9, 9)
+ERROR, 2022-06-07 16:25:31,656 local variable 'X_inserted' referenced before assignmentsth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/577712029.py", line 27, in single_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+ERROR, 2022-06-07 16:25:31,657 Exception on /single_class [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 16:25:31,657 127.0.0.1 - - [07/Jun/2022 16:25:31] "[35m[1mPOST /single_class HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 16:26:12,183  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 16:26:15,142 connection is successfull
+ERROR, 2022-06-07 16:26:15,143 Shape of passed values is (9, 1), indices imply (9, 9)sth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/577712029.py", line 22, in single_data
+    X_inserted = pd.DataFrame(fetch_data, columns=col)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\frame.py", line 711, in __init__
+    mgr = ndarray_to_mgr(
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 324, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 393, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (9, 1), indices imply (9, 9)
+ERROR, 2022-06-07 16:26:15,144 local variable 'X_inserted' referenced before assignmentsth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/577712029.py", line 27, in single_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+ERROR, 2022-06-07 16:26:15,145 Exception on /single_class [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 16:26:15,145 127.0.0.1 - - [07/Jun/2022 16:26:15] "[35m[1mPOST /single_class HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 16:28:18,199  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 16:29:25,651  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 16:29:29,177 connection is successfull
+ERROR, 2022-06-07 16:29:29,178 Shape of passed values is (9, 1), indices imply (9, 9)sth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3237125794.py", line 22, in single_data
+    X_inserted = pd.DataFrame(fetch_data, columns=col)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\frame.py", line 711, in __init__
+    mgr = ndarray_to_mgr(
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 324, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 393, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (9, 1), indices imply (9, 9)
+ERROR, 2022-06-07 16:29:29,180 local variable 'X_inserted' referenced before assignmentsth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3237125794.py", line 27, in single_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+ERROR, 2022-06-07 16:29:29,181 Exception on /single_class [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 16:29:29,182 127.0.0.1 - - [07/Jun/2022 16:29:29] "[35m[1mPOST /single_class HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 16:31:29,514  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 16:32:26,297  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 16:32:33,051 connection is successfull
+ERROR, 2022-06-07 16:32:33,051 Shape of passed values is (9, 1), indices imply (9, 9)sth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/984377466.py", line 22, in single_data
+    X_inserted = pd.DataFrame(fetch_data, columns=col)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\frame.py", line 711, in __init__
+    mgr = ndarray_to_mgr(
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 324, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 393, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (9, 1), indices imply (9, 9)
+ERROR, 2022-06-07 16:32:33,053 local variable 'X_inserted' referenced before assignmentsth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/984377466.py", line 27, in single_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+ERROR, 2022-06-07 16:32:33,053 Exception on /single_class [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 16:32:33,054 127.0.0.1 - - [07/Jun/2022 16:32:33] "[35m[1mPOST /single_class HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 16:35:12,740  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 16:35:16,078 connection is successfull
+ERROR, 2022-06-07 16:35:16,079 Shape of passed values is (9, 1), indices imply (9, 9)sth happened while fetching data from database
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3843550597.py", line 22, in single_data
+    X_inserted = pd.DataFrame(fetch_data, columns=col)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\frame.py", line 711, in __init__
+    mgr = ndarray_to_mgr(
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 324, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 393, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (9, 1), indices imply (9, 9)
+ERROR, 2022-06-07 16:35:16,081 local variable 'X_inserted' referenced before assignmentsth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3843550597.py", line 27, in single_data
+    y_pred = loaded_class_model.predict(X_inserted)
+UnboundLocalError: local variable 'X_inserted' referenced before assignment
+ERROR, 2022-06-07 16:35:16,081 Exception on /single_class [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 16:35:16,082 127.0.0.1 - - [07/Jun/2022 16:35:16] "[35m[1mPOST /single_class HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 17:21:06,404  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 17:21:46,679  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 17:21:59,456 Shape of passed values is (9, 1), indices imply (9, 9)error occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3962692717.py", line 18, in data_fetch
+    X_inserted = pd.DataFrame(fetch_data, columns=col)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\frame.py", line 711, in __init__
+    mgr = ndarray_to_mgr(
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 324, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 393, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (9, 1), indices imply (9, 9)
+ERROR, 2022-06-07 17:21:59,457 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 17:21:59,457 127.0.0.1 - - [07/Jun/2022 17:21:59] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+ERROR, 2022-06-07 17:32:45,343 Shape of passed values is (9, 1), indices imply (9, 9)error occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3962692717.py", line 18, in data_fetch
+    X_inserted = pd.DataFrame(fetch_data, columns=col)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\frame.py", line 711, in __init__
+    mgr = ndarray_to_mgr(
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 324, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 393, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (9, 1), indices imply (9, 9)
+ERROR, 2022-06-07 17:32:45,343 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 17:32:45,344 127.0.0.1 - - [07/Jun/2022 17:32:45] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 17:34:50,141  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 17:35:32,662 Shape of passed values is (9, 1), indices imply (9, 9)error occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3962692717.py", line 18, in data_fetch
+    X_inserted = pd.DataFrame(fetch_data, columns=col)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\frame.py", line 711, in __init__
+    mgr = ndarray_to_mgr(
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 324, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 393, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (9, 1), indices imply (9, 9)
+ERROR, 2022-06-07 17:35:32,662 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 17:35:32,663 127.0.0.1 - - [07/Jun/2022 17:35:32] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 17:36:25,051  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 17:36:36,607 Shape of passed values is (9, 1), indices imply (9, 9)error occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/2962695972.py", line 18, in data_fetch
+    X_inserted = pd.DataFrame(fetch_data, columns=col)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\frame.py", line 711, in __init__
+    mgr = ndarray_to_mgr(
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 324, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 393, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (9, 1), indices imply (9, 9)
+ERROR, 2022-06-07 17:36:36,608 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 17:36:36,609 127.0.0.1 - - [07/Jun/2022 17:36:36] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 17:44:25,962  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 17:44:31,358 Shape of passed values is (9, 1), indices imply (9, 9)error occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3886608779.py", line 18, in data_fetch
+    X_inserted = pd.DataFrame(fetch_data, columns=col)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\frame.py", line 711, in __init__
+    mgr = ndarray_to_mgr(
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 324, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 393, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (9, 1), indices imply (9, 9)
+ERROR, 2022-06-07 17:44:31,359 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 17:44:31,359 127.0.0.1 - - [07/Jun/2022 17:44:31] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 17:45:47,685  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 17:45:53,327 Shape of passed values is (9, 1), indices imply (9, 9)error occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/2054280899.py", line 18, in data_fetch
+    X_inserted = pd.DataFrame(fetch_data, columns=col)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\frame.py", line 711, in __init__
+    mgr = ndarray_to_mgr(
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 324, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 393, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (9, 1), indices imply (9, 9)
+ERROR, 2022-06-07 17:45:53,328 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 17:45:53,328 127.0.0.1 - - [07/Jun/2022 17:45:53] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 17:48:48,816  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 17:48:52,947 Shape of passed values is (9, 1), indices imply (9, 9)error occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3125189141.py", line 18, in data_fetch
+    X_inserted = pd.DataFrame(fetch_data, columns=col)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\frame.py", line 711, in __init__
+    mgr = ndarray_to_mgr(
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 324, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 393, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (9, 1), indices imply (9, 9)
+ERROR, 2022-06-07 17:48:52,948 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 17:48:52,949 127.0.0.1 - - [07/Jun/2022 17:48:52] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+ERROR, 2022-06-07 17:50:59,015 'Day'error occured whýle fetchýng data from postman
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3125189141.py", line 4, in data_fetch
+    Day = float(request.json['Day'])
+KeyError: 'Day'
+ERROR, 2022-06-07 17:50:59,016 local variable 'Day' referenced before assignmenterror occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3125189141.py", line 17, in data_fetch
+    fetch_data = [Day,  Month,  Humidity,  Wind,    DMC,    DC,  Spread,  Region,  Classes]
+UnboundLocalError: local variable 'Day' referenced before assignment
+ERROR, 2022-06-07 17:50:59,016 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 17:50:59,016 127.0.0.1 - - [07/Jun/2022 17:50:59] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 17:53:27,464  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 17:53:30,837 400 Bad Request: Failed to decode JSON object: Expecting value: line 2 column 12 (char 14)error occured whýle fetchýng data from postman
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\43117073062\Anaconda3\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\43117073062\Anaconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\43117073062\Anaconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 12 (char 14)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3125189141.py", line 4, in data_fetch
+    Day = float(request.json['Day'])
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\werkzeug\wrappers\request.py", line 612, in on_json_loading_failed
+    raise BadRequest(f"Failed to decode JSON object: {e}")
+werkzeug.exceptions.BadRequest: 400 Bad Request: Failed to decode JSON object: Expecting value: line 2 column 12 (char 14)
+ERROR, 2022-06-07 17:53:30,914 local variable 'Day' referenced before assignmenterror occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3125189141.py", line 17, in data_fetch
+    fetch_data = [Day,  Month,  Humidity,  Wind,    DMC,    DC,  Spread,  Region,  Classes]
+UnboundLocalError: local variable 'Day' referenced before assignment
+ERROR, 2022-06-07 17:53:30,914 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 17:53:30,915 127.0.0.1 - - [07/Jun/2022 17:53:30] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+ERROR, 2022-06-07 17:54:12,596 400 Bad Request: Failed to decode JSON object: Expecting value: line 2 column 12 (char 14)error occured whýle fetchýng data from postman
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\werkzeug\wrappers\request.py", line 586, in get_json
+    rv = self.json_module.loads(data)
+  File "C:\Users\43117073062\Anaconda3\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\43117073062\Anaconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\43117073062\Anaconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 12 (char 14)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3125189141.py", line 4, in data_fetch
+    Day = float(request.json['Day'])
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\werkzeug\wrappers\request.py", line 553, in json
+    return self.get_json()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\werkzeug\wrappers\request.py", line 595, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\werkzeug\wrappers\request.py", line 612, in on_json_loading_failed
+    raise BadRequest(f"Failed to decode JSON object: {e}")
+werkzeug.exceptions.BadRequest: 400 Bad Request: Failed to decode JSON object: Expecting value: line 2 column 12 (char 14)
+ERROR, 2022-06-07 17:54:12,597 local variable 'Day' referenced before assignmenterror occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3125189141.py", line 17, in data_fetch
+    fetch_data = [Day,  Month,  Humidity,  Wind,    DMC,    DC,  Spread,  Region,  Classes]
+UnboundLocalError: local variable 'Day' referenced before assignment
+ERROR, 2022-06-07 17:54:12,598 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 17:54:12,598 127.0.0.1 - - [07/Jun/2022 17:54:12] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 17:55:19,836  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 17:55:27,231 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.error occured whýle fetchýng data from postman
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/247005195.py", line 4, in data_fetch
+    Day = float(request.form['Day'])
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR, 2022-06-07 17:55:27,259 local variable 'Day' referenced before assignmenterror occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/247005195.py", line 17, in data_fetch
+    fetch_data = [Day,  Month,  Humidity,  Wind,    DMC,    DC,  Spread,  Region,  Classes]
+UnboundLocalError: local variable 'Day' referenced before assignment
+ERROR, 2022-06-07 17:55:27,260 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 17:55:27,260 127.0.0.1 - - [07/Jun/2022 17:55:27] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+ERROR, 2022-06-07 17:56:36,480 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.error occured whýle fetchýng data from postman
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/247005195.py", line 4, in data_fetch
+    Day = float(request.form['Day'])
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR, 2022-06-07 17:56:36,480 local variable 'Day' referenced before assignmenterror occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/247005195.py", line 17, in data_fetch
+    fetch_data = [Day,  Month,  Humidity,  Wind,    DMC,    DC,  Spread,  Region,  Classes]
+UnboundLocalError: local variable 'Day' referenced before assignment
+ERROR, 2022-06-07 17:56:36,481 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 17:56:36,481 127.0.0.1 - - [07/Jun/2022 17:56:36] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 17:56:47,012  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 17:56:51,088 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.error occured whýle fetchýng data from postman
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/247005195.py", line 4, in data_fetch
+    Day = float(request.form['Day'])
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR, 2022-06-07 17:56:51,088 local variable 'Day' referenced before assignmenterror occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/247005195.py", line 17, in data_fetch
+    fetch_data = [Day,  Month,  Humidity,  Wind,    DMC,    DC,  Spread,  Region,  Classes]
+UnboundLocalError: local variable 'Day' referenced before assignment
+ERROR, 2022-06-07 17:56:51,088 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 17:56:51,089 127.0.0.1 - - [07/Jun/2022 17:56:51] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 17:57:13,198  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 17:57:15,675 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.error occured whýle fetchýng data from postman
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3296417157.py", line 4, in data_fetch
+    Day = float(request.form['Day'])
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+ERROR, 2022-06-07 17:57:15,675 local variable 'Day' referenced before assignmenterror occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3296417157.py", line 17, in data_fetch
+    fetch_data = [Day,  Month,  Humidity,  Wind,    DMC,    DC,  Spread,  Region,  Classes]
+UnboundLocalError: local variable 'Day' referenced before assignment
+ERROR, 2022-06-07 17:57:15,676 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 17:57:15,676 127.0.0.1 - - [07/Jun/2022 17:57:15] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 18:08:14,739  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 18:08:18,711 127.0.0.1 - - [07/Jun/2022 18:08:18] "[33mPOST /my_data HTTP/1.1[0m" 404 -
+INFO, 2022-06-07 18:09:24,156  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 18:09:27,237 'Request' object has no attribute 'jsonjson'error occured while fetching data from postman
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3175294354.py", line 4, in data_fetch
+    Day = float(request.jsonjson['Day'])
+AttributeError: 'Request' object has no attribute 'jsonjson'
+ERROR, 2022-06-07 18:09:27,238 local variable 'Day' referenced before assignmenterror occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3175294354.py", line 17, in data_fetch
+    fetch_data = [Day,  Month,  Humidity,  Wind,    DMC,    DC,  Spread,  Region,  Classes]
+UnboundLocalError: local variable 'Day' referenced before assignment
+ERROR, 2022-06-07 18:09:27,238 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 18:09:27,238 127.0.0.1 - - [07/Jun/2022 18:09:27] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+ERROR, 2022-06-07 18:11:44,129 'Request' object has no attribute 'jsonjson'error occured while fetching data from postman
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3175294354.py", line 4, in data_fetch
+    Day = float(request.jsonjson['Day'])
+AttributeError: 'Request' object has no attribute 'jsonjson'
+ERROR, 2022-06-07 18:11:44,129 local variable 'Day' referenced before assignmenterror occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3175294354.py", line 17, in data_fetch
+    fetch_data = [Day,  Month,  Humidity,  Wind,    DMC,    DC,  Spread,  Region,  Classes]
+UnboundLocalError: local variable 'Day' referenced before assignment
+ERROR, 2022-06-07 18:11:44,130 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 18:11:44,130 127.0.0.1 - - [07/Jun/2022 18:11:44] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 18:12:37,009  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 18:12:40,839 'Request' object has no attribute 'jsonjson'error occured while fetching data from postman
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/2430799154.py", line 4, in data_fetch
+    Day = float(request.jsonjson['Day'])
+AttributeError: 'Request' object has no attribute 'jsonjson'
+ERROR, 2022-06-07 18:12:40,839 local variable 'Day' referenced before assignmenterror occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/2430799154.py", line 17, in data_fetch
+    fetch_data = [Day,  Month,  Humidity,  Wind,    DMC,    DC,  Spread,  Region,  Classes]
+UnboundLocalError: local variable 'Day' referenced before assignment
+ERROR, 2022-06-07 18:12:40,839 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 18:12:40,840 127.0.0.1 - - [07/Jun/2022 18:12:40] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 18:13:55,445  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 18:13:58,485 'Request' object has no attribute 'jsonjson'error occured while fetching data from postman
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3304834284.py", line 4, in data_fetch
+    Day = float(request.jsonjson['Day'])
+AttributeError: 'Request' object has no attribute 'jsonjson'
+ERROR, 2022-06-07 18:13:58,485 local variable 'Day' referenced before assignmenterror occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3304834284.py", line 17, in data_fetch
+    fetch_data = [Day,  Month,  Humidity,  Wind,    DMC,    DC,  Spread,  Region,  Classes]
+UnboundLocalError: local variable 'Day' referenced before assignment
+ERROR, 2022-06-07 18:13:58,485 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 18:13:58,486 127.0.0.1 - - [07/Jun/2022 18:13:58] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 18:15:09,651  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 18:15:15,058 Shape of passed values is (9, 1), indices imply (9, 9)error occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3788827159.py", line 18, in data_fetch
+    X_inserted = pd.DataFrame(fetch_data, columns=col)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\frame.py", line 711, in __init__
+    mgr = ndarray_to_mgr(
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 324, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 393, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (9, 1), indices imply (9, 9)
+ERROR, 2022-06-07 18:15:15,058 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 18:15:15,059 127.0.0.1 - - [07/Jun/2022 18:15:15] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 18:44:54,013  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 18:45:03,244 name 'Day' is not definederror occured returning data
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/2049146699.py", line 11, in data_fetch
+    fetch_data = [Day,  Month,  Humidity,  Wind,    DMC,    DC,  Spread,  Region,  Classes]
+NameError: name 'Day' is not defined
+ERROR, 2022-06-07 18:45:03,245 Exception on /my_data [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 18:45:03,245 127.0.0.1 - - [07/Jun/2022 18:45:03] "[35m[1mPOST /my_data HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 18:52:35,714  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 18:52:39,513 127.0.0.1 - - [07/Jun/2022 18:52:39] "POST /my_data HTTP/1.1" 200 -
+INFO, 2022-06-07 18:57:00,301  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 18:57:12,032 127.0.0.1 - - [07/Jun/2022 18:57:12] "POST /single_class HTTP/1.1" 200 -
+INFO, 2022-06-07 18:58:01,646  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 18:58:05,428 127.0.0.1 - - [07/Jun/2022 18:58:05] "POST /single_class HTTP/1.1" 200 -
+INFO, 2022-06-07 19:03:02,681  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 19:03:09,744 127.0.0.1 - - [07/Jun/2022 19:03:09] "POST /single_class HTTP/1.1" 200 -
+INFO, 2022-06-07 19:04:14,493  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 19:04:21,150  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 19:04:23,242 'numpy.int64' object is not iterablesth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/1451148649.py", line 14, in single_data
+    y_modified = ['Fire' if i ==1  else 'Not Fire' for i in y_pred]
+TypeError: 'numpy.int64' object is not iterable
+ERROR, 2022-06-07 19:04:23,242 Exception on /single_class [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 19:04:23,243 127.0.0.1 - - [07/Jun/2022 19:04:23] "[35m[1mPOST /single_class HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 19:05:09,478  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 19:05:12,757  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 19:05:15,225 'int' object is not iterablesth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/1693242740.py", line 14, in single_data
+    y_modified = ['Fire' if i ==1  else 'Not Fire' for i in int(y_pred)]
+TypeError: 'int' object is not iterable
+ERROR, 2022-06-07 19:05:15,226 Exception on /single_class [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 19:05:15,226 127.0.0.1 - - [07/Jun/2022 19:05:15] "[35m[1mPOST /single_class HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 19:05:41,574  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 19:05:43,843 'int' object is not iterablesth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/3120727517.py", line 14, in single_data
+    y_modified = ['Fire' if i ==1  else 'Not Fire' for i in int(y_pred)]
+TypeError: 'int' object is not iterable
+ERROR, 2022-06-07 19:05:43,843 Exception on /single_class [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 19:05:43,844 127.0.0.1 - - [07/Jun/2022 19:05:43] "[35m[1mPOST /single_class HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 19:06:22,372  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 19:06:24,705 'int' object is not iterablesth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/1831936724.py", line 14, in single_data
+    y_modified = ['Fire' if i ==1  else 'Not Fire' for i in int(y_pred)]
+TypeError: 'int' object is not iterable
+ERROR, 2022-06-07 19:06:24,706 Exception on /single_class [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 19:06:24,706 127.0.0.1 - - [07/Jun/2022 19:06:24] "[35m[1mPOST /single_class HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 19:07:17,776  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 19:07:28,965 Object of type int64 is not JSON serializablesth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/49947640.py", line 14, in single_data
+    return jsonify(y_pred)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\json\__init__.py", line 370, in jsonify
+    dumps(data, indent=indent, separators=separators) + "\n",
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\json\__init__.py", line 211, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "C:\Users\43117073062\Anaconda3\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\43117073062\Anaconda3\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\43117073062\Anaconda3\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\json\__init__.py", line 100, in default
+    return _json.JSONEncoder.default(self, o)
+  File "C:\Users\43117073062\Anaconda3\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type int64 is not JSON serializable
+ERROR, 2022-06-07 19:07:29,002 Exception on /single_class [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 19:07:29,002 127.0.0.1 - - [07/Jun/2022 19:07:29] "[35m[1mPOST /single_class HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 19:08:30,056  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ERROR, 2022-06-07 19:08:35,082 Object of type int64 is not JSON serializablesth happened while predicting the data with model
+Traceback (most recent call last):
+  File "C:\Users\431170~1\AppData\Local\Temp/ipykernel_96432/2576580552.py", line 14, in single_classif
+    return jsonify(y_pred)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\json\__init__.py", line 370, in jsonify
+    dumps(data, indent=indent, separators=separators) + "\n",
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\json\__init__.py", line 211, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "C:\Users\43117073062\Anaconda3\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\43117073062\Anaconda3\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\43117073062\Anaconda3\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\json\__init__.py", line 100, in default
+    return _json.JSONEncoder.default(self, o)
+  File "C:\Users\43117073062\Anaconda3\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type int64 is not JSON serializable
+ERROR, 2022-06-07 19:08:35,082 Exception on /single_class [POST]
+Traceback (most recent call last):
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\43117073062\Anaconda3\lib\site-packages\flask\app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO, 2022-06-07 19:08:35,083 127.0.0.1 - - [07/Jun/2022 19:08:35] "[35m[1mPOST /single_class HTTP/1.1[0m" 500 -
+INFO, 2022-06-07 19:09:23,615  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 19:09:39,367 127.0.0.1 - - [07/Jun/2022 19:09:39] "POST /single_regress HTTP/1.1" 200 -
+INFO, 2022-06-07 19:10:10,592  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO, 2022-06-07 19:10:15,148 127.0.0.1 - - [07/Jun/2022 19:10:15] "POST /single_class HTTP/1.1" 200 -

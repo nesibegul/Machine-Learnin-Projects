@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Algerian Forest Fire Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('single_class_html')}}"method="post">
+      <input type="text" name="Day" placeholder="Day" required="required" /><br>
+    	<input type="text" name="Month" placeholder="Month" required="required" /><br>
+        <input type="text" name="Humidity" placeholder="Humidity" required="required" /><br>
+        <input type="text" name="Wind" placeholder="Wind" required="required" /><br>
+        <input type="text" name="Rain" placeholder="Rain" required="required" /><br>
+        <input type="text" name="DMC" placeholder="DMC" required="required" /><br>
+        <input type="text" name="DC" placeholder="DC" required="required" /><br>
+        <input type="text" name="Spread" placeholder="Spread" required="required" /><br>
+        <input type="text" name="Region" placeholder="Region" required="required" /><br>
+
+       
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict Class</button>
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ {{prediction_text}}
+
+</body>
+</html>
+
+
